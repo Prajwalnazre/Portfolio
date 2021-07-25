@@ -547,8 +547,8 @@ body {
     font-size: 2rem;
     cursor: pointer;
     padding-left: 15px;
-    border-top-right-radius: 10px;
-    border-bottom-left-radius: 10px;
+    /* border-radius: 10px; */
+    /* border-bottom-left-radius: 10px; */
     transition: all 1s;
   }
 
