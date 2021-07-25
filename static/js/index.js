@@ -1,6 +1,7 @@
 // index
-
+    
 $(document).ready(function() {
+    console.log("document ready")
     $("#aboutMe").mouseenter(function(){
         $(this).css("transition", "all 1s");
         $(this).css("transform", "scale(1.1)")
@@ -55,5 +56,14 @@ $(document).ready(function() {
         $(this).css("border-top", "none");
         $(this).css("border-bottom", "none");  
     })
+
+    $('body').bind('mousewheel', function(e){
+        if(e.originalEvent.wheelDelta /120 > 0) {
+            console.log("wheel up");
+        }
+        else{
+            console.log("wheel down");
+        }
+    });
 
 });
