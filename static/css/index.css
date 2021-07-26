@@ -642,7 +642,7 @@ body {
   } */
 
 #scrollMessage {
-  color: white;
+  /* color: white; */
   position: absolute;
   bottom: 0;
   left: 25px;
@@ -662,7 +662,7 @@ body {
   color: lightblue
 } */
 
-.lightredText {
+.lightgreenText {
   color: rgb(123, 245, 75);
 }
 
@@ -684,4 +684,8 @@ body {
 
 #contactContainer {
   display: none;
+}
+
+.orangeText {
+  color: orange
 }

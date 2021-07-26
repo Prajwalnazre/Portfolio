@@ -57,7 +57,7 @@ $(document).ready(function() {
         $(this).css("border-bottom", "none");  
     })
 
-    var counter = 0
+    var counter = 0;
     $('body').bind('mousewheel', function(e){
         if(e.originalEvent.wheelDelta /120 > 0) {
             counter = counter - 1;
@@ -90,8 +90,6 @@ $(document).ready(function() {
             $(navIds[index]).css("border-top", "none");
             $(navIds[index]).css("border-bottom", "none");
         },1000);
-
-
 
         if(index == 0)
         {
@@ -218,6 +216,40 @@ $(document).ready(function() {
     
             },400);
         }        
+
+    });
+
+    var keyCounter = 0;
+    $('body').keyup(function (e) {
+        if (e.keyCode == 38) {
+            keyCounter = keyCounter - 1;
+        }
+        if (e.keyCode == 40) {
+            keyCounter += 1;
+        }
+        if(keyCounter > 4)
+        {
+            keyCounter = 0;
+        }
+        if(keyCounter < 0)
+        {
+            keyCounter = 4;
+        }
+
+        var navIds = ["#aboutMe", "#projects", "#experience", "#education", "#contactMe"];
+
+        $(navIds[keyCounter]).css("transition", "all 0.4s");
+        $(navIds[keyCounter]).css("transform", "scale(1.1)");
+        $(navIds[keyCounter]).css("border-top", "4px solid white");
+        $(navIds[keyCounter]).css("border-bottom", "4px solid white");
+
+        setTimeout(function(){
+            $(navIds[keyCounter]).css("transform", "scale(1)");
+            $(navIds[keyCounter]).css("border-top", "none");
+            $(navIds[keyCounter]).css("border-bottom", "none");
+        },400);
+
+
 
     });
 
