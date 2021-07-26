@@ -723,8 +723,40 @@ body {
   color: white;
   background-color:rgb(35, 141, 167);
   padding: 10px;
+  border: 2px solid rgba(0, 10, 75, 1);
 }
 
 .italicText {
   font-style: italic;
+}
+
+.rightAlign {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+#expPrev {
+  cursor: pointer;
+  color: lightgray;
+}
+
+#expPrev:hover {
+  color: lightgray;
+}
+
+#expNext {
+  cursor: pointer;
+}
+
+#expNext:hover {
+  color: lightgray;
+}
+
+#expTake {
+  display: none;
+}
+
+#expRes {
+  display: none;
 }
