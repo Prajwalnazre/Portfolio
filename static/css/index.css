@@ -1,6 +1,7 @@
 body {
-  background: rgb(0,16,47);
-  background: linear-gradient(0deg, rgba(0,16,47,1) 0%, rgba(26,100,147,1) 56%, rgba(0,115,186,1) 100%);
+  transition: all 1s;
+  background: rgb(0, 10, 75);
+  background: linear-gradient(0deg, rgba(0, 10, 75, 1) 0%, rgba(26, 100, 147, 1) 25%, rgba(0, 186, 179, 1) 100%);
   margin: 0;
 }
 
@@ -641,7 +642,7 @@ body {
   } */
 
 #scrollMessage {
-  color: white;
+  /* color: white; */
   position: absolute;
   bottom: 0;
   left: 25px;
@@ -657,12 +658,12 @@ body {
   font-size: 3rem;
 }
 
-.lightblueText {
+/* .lightblueText {
   color: lightblue
-}
+} */
 
-.lightredText {
-  color: lightcoral;
+.lightgreenText {
+  color: rgb(123, 245, 75);
 }
 
 .yellowText {
@@ -683,4 +684,8 @@ body {
 
 #contactContainer {
   display: none;
+}
+
+.orangeText {
+  color: orange
 }

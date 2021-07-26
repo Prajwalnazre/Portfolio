@@ -57,7 +57,7 @@ $(document).ready(function() {
         $(this).css("border-bottom", "none");  
     })
 
-    var counter = 0
+    var counter = 0;
     $('body').bind('mousewheel', function(e){
         if(e.originalEvent.wheelDelta /120 > 0) {
             counter = counter - 1;
@@ -105,8 +105,13 @@ $(document).ready(function() {
             setTimeout(function(){
                 $("#contactContainer").css("display", "none");
                 $("#projectsContainer").css("display", "none");
+                $("#experienceContainer").css("display", "none");
+                $("#educationContainer").css("display", "none");
+                
                 $("#aboutMeContainer").css("display", "block");
                 $("#aboutMeContainer").addClass("animate__fadeInDown");
+                $("body").css("background", "rgb(0,10,75)");
+                $("body").css("background", "linear-gradient(0deg, rgba(0,10,75,1) 0%, rgba(26,100,147,1) 25%, rgba(0,186,179,1) 100%)");
             },400);
         }
         
@@ -125,8 +130,14 @@ $(document).ready(function() {
             setTimeout(function(){
                 $("#aboutMeContainer").css("display", "none");
                 $("#experienceContainer").css("display", "none");
+                $("#educationContainer").css("display", "none");
+                $("#contactContainer").css("display", "none");
+
                 $("#projectsContainer").css("display", "block");
                 $("#projectsContainer").addClass("animate__fadeInDown");
+                $("body").css("background", "rgb(0,10,75)");
+                $("body").css("background", "linear-gradient(0deg, rgba(0,10,75,1) 0%, rgba(26,100,147,1) 25%, rgba(1,163,184,1) 100%)");
+            
             },400);
         }
 
@@ -142,10 +153,17 @@ $(document).ready(function() {
             $("#educationContainer").removeClass("animate__fadeInDown");
             
             setTimeout(function(){
+                $("#aboutMeContainer").css("display", "none");
                 $("#projectsContainer").css("display", "none");
                 $("#educationContainer").css("display", "none");
+                $("#contactContainer").css("display", "none");
+
+
                 $("#experienceContainer").css("display", "block");
                 $("#experienceContainer").addClass("animate__fadeInDown");
+                $("body").css("background", "rgb(0,7,54)");
+                $("body").css("background", "linear-gradient(0deg, rgba(0,7,54,1) 0%, rgba(26,100,147,1) 32%, rgba(1,126,184,1) 100%)");
+            
             },400);
         }
 
@@ -161,10 +179,16 @@ $(document).ready(function() {
             $("#contactContainer").removeClass("animate__fadeInDown");
             
             setTimeout(function(){
+                $("#aboutMeContainer").css("display", "none");
+                $("#projectsContainer").css("display", "none");
                 $("#experienceContainer").css("display", "none");
                 $("#contactContainer").css("display", "none");
+
                 $("#educationContainer").css("display", "block");
                 $("#educationContainer").addClass("animate__fadeInDown");
+                $("body").css("background", "rgb(0,7,54)");
+                $("body").css("background", "linear-gradient(0deg, rgba(0,7,54,1) 0%, rgba(26,86,147,1) 49%, rgba(1,126,184,1) 100%)");
+            
             },400);
         }
 
@@ -178,14 +202,169 @@ $(document).ready(function() {
             $("#educationContainer").removeClass("animate__fadeInDown");
             $("#aboutMeContainer").addClass("animate__backOutUp");
             $("#aboutMeContainer").removeClass("animate__fadeInDown");
-            
+
             setTimeout(function(){
-                $("#educationContainer").css("display", "none");
                 $("#aboutMeContainer").css("display", "none");
+                $("#projectsContainer").css("display", "none");
+                $("#experienceContainer").css("display", "none");
+                $("#educationContainer").css("display", "none");
+
                 $("#contactContainer").css("display", "block");
                 $("#contactContainer").addClass("animate__fadeInDown");
+                $("body").css("background", "rgb(0,19,94)");
+                $("body").css("background", "linear-gradient(0deg, rgba(0,19,94,1) 0%, rgba(0,47,149,1) 25%, rgba(0,102,149,1) 100%)");
+    
             },400);
         }        
+
+    });
+
+    var keyCounter = 0;
+    $('body').keyup(function (e) {
+        if (e.keyCode == 38) {
+            keyCounter = keyCounter - 1;
+        }
+        if (e.keyCode == 40) {
+            keyCounter += 1;
+        }
+        if(keyCounter > 4)
+        {
+            keyCounter = 0;
+        }
+        if(keyCounter < 0)
+        {
+            keyCounter = 4;
+        }
+
+        var navIds = ["#aboutMe", "#projects", "#experience", "#education", "#contactMe"];
+
+        $(navIds[keyCounter]).css("transition", "all 0.4s");
+        $(navIds[keyCounter]).css("transform", "scale(1.1)");
+        $(navIds[keyCounter]).css("border-top", "4px solid white");
+        $(navIds[keyCounter]).css("border-bottom", "4px solid white");
+
+        setTimeout(function(){
+            $(navIds[keyCounter]).css("transform", "scale(1)");
+            $(navIds[keyCounter]).css("border-top", "none");
+            $(navIds[keyCounter]).css("border-bottom", "none");
+        },400);
+
+
+
+    });
+
+    $("#aboutMe").mousedown(function(){
+        // current section - aboutMeContainer
+        $(this).css("color","blue");
+
+    }).mouseup(function(){
+        $(this).css("color", "white");
+        $("#projectsContainer").removeClass("animate__fadeInDown");
+        $("#experienceContainer").removeClass("animate__fadeInDown");
+        $("#educationContainer").removeClass("animate__fadeInDown");
+        $("#contactContainer").removeClass("animate__fadeInDown");
+
+        $("#projectsContainer").css("display", "none");
+        $("#experienceContainer").css("display", "none");
+        $("#educationContainer").css("display", "none");
+        $("#contactContainer").css("display", "none");
+        $("#aboutMeContainer").css("display", "block");
+        $("#aboutMeContainer").addClass("animate__fadeInDown");
+
+        $("body").css("background", "rgb(0,10,75)");
+        $("body").css("background", "linear-gradient(0deg, rgba(0,10,75,1) 0%, rgba(26,100,147,1) 25%, rgba(0,186,179,1) 100%)");
+
+    });
+
+    $("#projects").mousedown(function(){
+        // current section - projectsContainer
+        $(this).css("color","blue");
+
+    }).mouseup(function(){
+        $(this).css("color", "white");
+        $("#aboutMeContainer").removeClass("animate__fadeInDown");
+        $("#experienceContainer").removeClass("animate__fadeInDown");
+        $("#educationContainer").removeClass("animate__fadeInDown");
+        $("#contactContainer").removeClass("animate__fadeInDown");
+
+        $("#aboutMeContainer").css("display", "none");
+        $("#experienceContainer").css("display", "none");
+        $("#educationContainer").css("display", "none");
+        $("#contactContainer").css("display", "none");
+        $("#projectsContainer").css("display", "block");
+        $("#projectsContainer").addClass("animate__fadeInDown");
+
+        $("body").css("background", "rgb(0,10,75)");
+        $("body").css("background", "linear-gradient(0deg, rgba(0,10,75,1) 0%, rgba(26,100,147,1) 25%, rgba(1,163,184,1) 100%)");
+
+    });
+
+    $("#experience").mousedown(function(){
+        // current section - experienceContainer
+        $(this).css("color","blue");
+
+    }).mouseup(function(){
+        $(this).css("color", "white");
+        $("#aboutMeContainer").removeClass("animate__fadeInDown");
+        $("#projectsContainer").removeClass("animate__fadeInDown");
+        $("#educationContainer").removeClass("animate__fadeInDown");
+        $("#contactContainer").removeClass("animate__fadeInDown");
+
+        $("#aboutMeContainer").css("display", "none");
+        $("#projectsContainer").css("display", "none");
+        $("#educationContainer").css("display", "none");
+        $("#contactContainer").css("display", "none");
+        $("#experienceContainer").css("display", "block");
+        $("#experienceContainer").addClass("animate__fadeInDown");
+
+        $("body").css("background", "rgb(0,7,54)");
+        $("body").css("background", "linear-gradient(0deg, rgba(0,7,54,1) 0%, rgba(26,100,147,1) 32%, rgba(1,126,184,1) 100%)");
+
+    });
+    
+    $("#education").mousedown(function(){
+        // current section - educationContainer
+        $(this).css("color","blue");
+
+    }).mouseup(function(){
+        $(this).css("color", "white");
+        $("#aboutMeContainer").removeClass("animate__fadeInDown");
+        $("#projectsContainer").removeClass("animate__fadeInDown");
+        $("#experienceContainer").removeClass("animate__fadeInDown");
+        $("#contactContainer").removeClass("animate__fadeInDown");
+
+        $("#aboutMeContainer").css("display", "none");
+        $("#projectsContainer").css("display", "none");
+        $("#experienceContainer").css("display", "none");
+        $("#contactContainer").css("display", "none");
+        $("#educationContainer").css("display", "block");
+        $("#educationContainer").addClass("animate__fadeInDown");
+
+        $("body").css("background", "rgb(0,7,54)");
+        $("body").css("background", "linear-gradient(0deg, rgba(0,7,54,1) 0%, rgba(26,86,147,1) 49%, rgba(1,126,184,1) 100%)");    
+
+    });
+
+    $("#contactMe").mousedown(function(){
+        // current section - contactContainer
+        $(this).css("color","blue");
+
+    }).mouseup(function(){
+        $(this).css("color", "white");
+        $("#aboutMeContainer").removeClass("animate__fadeInDown");
+        $("#projectsContainer").removeClass("animate__fadeInDown");
+        $("#experienceContainer").removeClass("animate__fadeInDown");
+        $("#educationContainer").removeClass("animate__fadeInDown");
+
+        $("#aboutMeContainer").css("display", "none");
+        $("#projectsContainer").css("display", "none");
+        $("#experienceContainer").css("display", "none");
+        $("#educationContainer").css("display", "none");
+        $("#contactContainer").css("display", "block");
+        $("#contactContainer").addClass("animate__fadeInDown");
+
+        $("body").css("background", "rgb(0,19,94)");
+        $("body").css("background", "linear-gradient(0deg, rgba(0,19,94,1) 0%, rgba(0,47,149,1) 25%, rgba(0,102,149,1) 100%)");
 
     });
 
