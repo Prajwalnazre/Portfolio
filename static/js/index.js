@@ -107,6 +107,8 @@ $(document).ready(function() {
                 $("#projectsContainer").css("display", "none");
                 $("#aboutMeContainer").css("display", "block");
                 $("#aboutMeContainer").addClass("animate__fadeInDown");
+                $("body").css("background", "rgb(0,10,75)");
+                $("body").css("background", "linear-gradient(0deg, rgba(0,10,75,1) 0%, rgba(26,100,147,1) 25%, rgba(0,186,179,1) 100%)");
             },400);
         }
         
@@ -127,6 +129,9 @@ $(document).ready(function() {
                 $("#experienceContainer").css("display", "none");
                 $("#projectsContainer").css("display", "block");
                 $("#projectsContainer").addClass("animate__fadeInDown");
+                $("body").css("background", "rgb(0,10,75)");
+                $("body").css("background", "linear-gradient(0deg, rgba(0,10,75,1) 0%, rgba(26,100,147,1) 25%, rgba(1,163,184,1) 100%)");
+            
             },400);
         }
 
@@ -146,6 +151,9 @@ $(document).ready(function() {
                 $("#educationContainer").css("display", "none");
                 $("#experienceContainer").css("display", "block");
                 $("#experienceContainer").addClass("animate__fadeInDown");
+                $("body").css("background", "rgb(0,7,54)");
+                $("body").css("background", "linear-gradient(0deg, rgba(0,7,54,1) 0%, rgba(26,100,147,1) 32%, rgba(1,126,184,1) 100%)");
+            
             },400);
         }
 
@@ -165,6 +173,9 @@ $(document).ready(function() {
                 $("#contactContainer").css("display", "none");
                 $("#educationContainer").css("display", "block");
                 $("#educationContainer").addClass("animate__fadeInDown");
+                $("body").css("background", "rgb(0,7,54)");
+                $("body").css("background", "linear-gradient(0deg, rgba(0,7,54,1) 0%, rgba(26,86,147,1) 49%, rgba(1,126,184,1) 100%)");
+            
             },400);
         }
 
@@ -178,12 +189,15 @@ $(document).ready(function() {
             $("#educationContainer").removeClass("animate__fadeInDown");
             $("#aboutMeContainer").addClass("animate__backOutUp");
             $("#aboutMeContainer").removeClass("animate__fadeInDown");
-            
+
             setTimeout(function(){
                 $("#educationContainer").css("display", "none");
                 $("#aboutMeContainer").css("display", "none");
                 $("#contactContainer").css("display", "block");
                 $("#contactContainer").addClass("animate__fadeInDown");
+                $("body").css("background", "rgb(0,10,50)");
+                $("body").css("background", "linear-gradient(0deg, rgba(0,10,50,1) 0%, rgba(0,47,149,1) 22%, rgba(60,118,184,1) 100%)");
+    
             },400);
         }        
 
