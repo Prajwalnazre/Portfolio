@@ -1,4 +1,5 @@
 body {
+  transition: all 1s;
   background: rgb(0, 10, 75);
   background: linear-gradient(0deg, rgba(0, 10, 75, 1) 0%, rgba(26, 100, 147, 1) 25%, rgba(0, 186, 179, 1) 100%);
   margin: 0;

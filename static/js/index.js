@@ -195,8 +195,8 @@ $(document).ready(function() {
                 $("#aboutMeContainer").css("display", "none");
                 $("#contactContainer").css("display", "block");
                 $("#contactContainer").addClass("animate__fadeInDown");
-                $("body").css("background", "rgb(0,10,50)");
-                $("body").css("background", "linear-gradient(0deg, rgba(0,10,50,1) 0%, rgba(0,47,149,1) 22%, rgba(60,118,184,1) 100%)");
+                $("body").css("background", "rgb(0,19,94)");
+                $("body").css("background", "linear-gradient(0deg, rgba(0,19,94,1) 0%, rgba(0,47,149,1) 25%, rgba(0,102,149,1) 100%)");
     
             },400);
         }        
