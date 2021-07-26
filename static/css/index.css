@@ -668,3 +668,19 @@ body {
 .yellowText {
   color: rgb(255, 255, 79)
 }
+
+#projectsContainer {
+  display: none;
+}
+
+#experienceContainer {
+  display: none;
+}
+
+#educationContainer {
+  display: none;
+}
+
+#contactContainer {
+  display: none;
+}
