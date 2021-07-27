@@ -719,6 +719,7 @@ body {
 }
 
 #experienceBody {
+  border-radius: 10px;
   margin-top: 10px;
   color: white;
   background-color:rgb(35, 141, 167);
@@ -845,16 +846,24 @@ a:hover {
 }
 
 .rightCol {
-  margin-top: 10%;
+  margin-top: 15%;
 }
 
 .leftContainer {
+  position: absolute;
+  color: white;
+  top: 90%;
   margin-top: 20px;
   font-size: 3.4rem;
+  width: fit-content;
 }
 
 .rightContainer {
+  position: absolute;
+  left: 94.5%;
+  color: white;
   font-size: 3.4rem;
+  width: fit-content;
 }
 
 #leftIcon {
@@ -912,4 +921,8 @@ a:hover {
 
 #doctorModal {
   display: none;
+}
+
+#expTitle {
+  background-color: rgb(35, 141, 167);
 }
