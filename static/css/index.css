@@ -765,3 +765,32 @@ body {
   background-color: darkblue;
   /* width: 60%; */
 }
+
+#form {
+  width: fit-content;
+  padding: 20px;
+  background-color: lightblue;
+}
+
+#visNameContainer {
+  margin-bottom: 10px;
+}
+
+#visMailContainer {
+  margin-bottom: 10px;
+}
+
+#visMessageContainer {
+  margin-bottom: 10px;
+}
+
+#submitBtnContainer {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#submitBtn {
+  margin-left: auto;
+  margin-right: auto;
+}
