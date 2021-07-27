@@ -249,8 +249,6 @@ $(document).ready(function() {
             $(navIds[keyCounter]).css("border-bottom", "none");
         },400);
 
-
-
     });
 
     $("#aboutMe").mousedown(function(){
