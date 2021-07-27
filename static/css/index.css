@@ -760,3 +760,8 @@ body {
 #expRes {
   display: none;
 }
+
+#educationBody {
+  background-color: darkblue;
+  /* width: 60%; */
+}
