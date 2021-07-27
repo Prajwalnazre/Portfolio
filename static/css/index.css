@@ -880,3 +880,35 @@ a:hover {
   left: 56.5%;
   /* right: 10px; */
 }
+
+.projectsModal {
+  position: absolute;
+  top: 10%;
+  width: 80%;
+  left: 10%;
+  z-index: 10;
+  border-radius: 10px;
+  /* right: auto; */
+}
+
+.closeBtn{
+  position: absolute;
+  left: 96%;
+  top: 10px
+}
+
+#memoriesModal {
+  display: none;
+}
+
+#quantumModal {
+  display: none;
+}
+
+#cfdModal {
+  display: none;
+}
+
+#doctorModal {
+  display: none;
+}
