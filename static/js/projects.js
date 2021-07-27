@@ -58,6 +58,40 @@ $(document).ready(function(){
         },700);
     });
 
-    
+    $(".closeBtn").on("click", function(){
+        $("#memoriesModal").css("display", "none");
+        $("#quantumModal").css("display", "none");
+        $("#cfdModal").css("display", "none");
+        $("#doctorModal").css("display", "none");
+    });
+
+    $("#memoriesMoreBtn").on("click",function(){
+        $("#memoriesModal").css("display", "block");
+        $("#quantumModal").css("display", "none");
+        $("#cfdModal").css("display", "none");
+        $("#doctorModal").css("display", "none");
+    })
+
+    $("#quantumMoreBtn").on("click",function(){
+        $("#memoriesModal").css("display", "none");
+        $("#quantumModal").css("display", "block");
+        $("#cfdModal").css("display", "none");
+        $("#doctorModal").css("display", "none");
+    })
+
+    $("#cfdMoreBtn").on("click",function(){
+        $("#memoriesModal").css("display", "none");
+        $("#quantumModal").css("display", "none");
+        $("#cfdModal").css("display", "block");
+        $("#doctorModal").css("display", "none");
+    })
+
+    $("#doctorMoreBtn").on("click",function(){
+        $("#memoriesModal").css("display", "none");
+        $("#quantumModal").css("display", "none");
+        $("#cfdModal").css("display", "none");
+        $("#doctorModal").css("display", "block");
+    })
+
 
 });
