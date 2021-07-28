@@ -6,7 +6,8 @@ $(document).ready(function(){
     // doctorContainer 
     
     $("#rightIcon").on("click", function(){
-
+        $(this).css("color", "lightgrey");
+        $("#leftIcon").css("color", "white");
 
         $("#memoriesContainer").removeClass("animate__backInLeft");
         $("#quantumContainer").removeClass("animate__backInLeft");
@@ -33,6 +34,9 @@ $(document).ready(function(){
     });
 
     $("#leftIcon").on("click", function(){
+
+        $(this).css("color", "lightgrey");
+        $("#rightIcon").css("color", "white");
 
         $("#cfdContainer").removeClass("animate__backInRight");
         $("#doctorContainer").removeClass("animate__backInRight");
@@ -108,7 +112,6 @@ $(document).ready(function(){
         $("#cfdContainer").css("opacity","0.7");
         $("#doctorContainer").css("opacity","0.7");
 
-
     })
 
     $("#quantumMoreBtn").on("click",function(){
@@ -158,5 +161,13 @@ $(document).ready(function(){
         
     })
 
+    // $("#memoriesContainer").mouseenter(function(){
+    //     $(this).removeAttr('style');
+    //     $(this).css("transform", "scale(1.05)");
+    //     console.log("enter the dragon");
+    // }).mouseleave(function(){
+    //     $(this).removeAttr('style');
+    //     $(this).css("transform", "scale(1)");
+    // });
 
 });

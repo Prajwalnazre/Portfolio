@@ -580,12 +580,12 @@ body {
   color: white;
   width: fit-content;
   margin-top: 3%;
-  margin-left: 18%;
+  margin-left: 10%;
   margin-right: auto;
 }
 
 .title h1 {
-  font-size: 5.2rem;
+  font-size: 4rem;
 }
 
 .navigationSection {
@@ -649,7 +649,7 @@ body {
 }
 
 #sentence {
-  margin-top: 10%;
+  margin-top: 7%;
   font-size: 23px;
   /* display: inline-flex; */
 }
@@ -725,6 +725,7 @@ body {
   background-color:rgb(35, 141, 167);
   padding: 10px;
   border: 2px solid rgba(0, 10, 75, 1);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .italicText {
@@ -867,6 +868,7 @@ a:hover {
 }
 
 #leftIcon {
+  color: lightgrey;
   cursor: pointer;
 }
 
@@ -876,10 +878,12 @@ a:hover {
 
 #cfdContainer {
   display: none;
+  transition: 0.4s all;
 }
 
 #doctorContainer {
   display: none;
+  transition: 0.4s all;
 }
 
 .sourceCodeBtn {
@@ -909,6 +913,7 @@ a:hover {
   left: 10%;
   z-index: 100;
   border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   /* right: auto; */
 }
 
@@ -942,3 +947,63 @@ a:hover {
 #expTitle {
   background-color: rgb(35, 141, 167);
 }
+
+#memoriesContainer{
+  transition: 0.4s all;
+}
+
+/* #memoriesContainer:hover {
+  transform: scale(1.05);
+} */
+
+/* #cfdContainer:hover {
+  transform: scale(1.05);
+} */
+
+#quantumContainer{
+  transition: 0.4s all;
+}
+
+/* #quantumContainer:hover {
+  transform: scale(1.05);
+}
+
+
+#doctorContainer:hover {
+  transform: scale(1.05);
+} */
+
+#skillsLeft {
+  display: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+#skillsRight {
+  /* display: none; */
+  cursor: pointer;
+  width: fit-content;
+}
+
+#extensivelyUsed{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+#occasionallyUsed{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+#tools{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+#mySkills {
+  display: none;
+}
+
