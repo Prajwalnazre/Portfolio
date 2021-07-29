@@ -220,38 +220,36 @@ $(document).ready(function() {
     });
 
     var keyCounter = 0;
-    $('body').keyup(function (e) {
-        if (e.keyCode == 38) {
-            keyCounter = keyCounter - 1;
-        }
-        if (e.keyCode == 40) {
-            keyCounter += 1;
-        }
-        if(keyCounter > 4)
-        {
-            keyCounter = 0;
-        }
-        if(keyCounter < 0)
-        {
-            keyCounter = 4;
-        }
+    // $('body').keyup(function (e) {
+    //     if (e.keyCode == 38) {
+    //         keyCounter = keyCounter - 1;
+    //     }
+    //     if (e.keyCode == 40) {
+    //         keyCounter += 1;
+    //     }
+    //     if(keyCounter > 4)
+    //     {
+    //         keyCounter = 0;
+    //     }
+    //     if(keyCounter < 0)
+    //     {
+    //         keyCounter = 4;
+    //     }
 
-        var navIds = ["#aboutMe", "#projects", "#experience", "#education", "#contactMe"];
+    //     var navIds = ["#aboutMe", "#projects", "#experience", "#education", "#contactMe"];
 
-        $(navIds[keyCounter]).css("transition", "all 0.4s");
-        $(navIds[keyCounter]).css("transform", "scale(1.1)");
-        $(navIds[keyCounter]).css("border-top", "4px solid white");
-        $(navIds[keyCounter]).css("border-bottom", "4px solid white");
+    //     $(navIds[keyCounter]).css("transition", "all 0.4s");
+    //     $(navIds[keyCounter]).css("transform", "scale(1.1)");
+    //     $(navIds[keyCounter]).css("border-top", "4px solid white");
+    //     $(navIds[keyCounter]).css("border-bottom", "4px solid white");
 
-        setTimeout(function(){
-            $(navIds[keyCounter]).css("transform", "scale(1)");
-            $(navIds[keyCounter]).css("border-top", "none");
-            $(navIds[keyCounter]).css("border-bottom", "none");
-        },400);
+    //     setTimeout(function(){
+    //         $(navIds[keyCounter]).css("transform", "scale(1)");
+    //         $(navIds[keyCounter]).css("border-top", "none");
+    //         $(navIds[keyCounter]).css("border-bottom", "none");
+    //     },400);
 
-
-
-    });
+    // });
 
     $("#aboutMe").mousedown(function(){
         // current section - aboutMeContainer

@@ -573,19 +573,19 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 4fr 1fr;
 }
 
 .title {
   color: white;
   width: fit-content;
   margin-top: 3%;
-  margin-left: 18%;
+  margin-left: 10%;
   margin-right: auto;
 }
 
 .title h1 {
-  font-size: 5.2rem;
+  font-size: 4rem;
 }
 
 .navigationSection {
@@ -649,7 +649,7 @@ body {
 }
 
 #sentence {
-  margin-top: 10%;
+  margin-top: 7%;
   font-size: 23px;
   /* display: inline-flex; */
 }
@@ -689,3 +689,321 @@ body {
 .orangeText {
   color: orange
 }
+
+#projectTitle {
+  color: white;
+  margin-top: 3%;
+  width: fit-content;
+  font-size: 3.5rem;
+}
+
+#experienceTitle {
+  color: white;
+  margin-top: 3%;
+  width: fit-content;
+  font-size: 3.5rem;
+}
+
+#educationTitle {
+  color: white;
+  margin-top: 3%;
+  width: fit-content;
+  font-size: 3.5rem;
+}
+
+#contactTitle {
+  color: white;
+  margin-top: 3%;
+  width: fit-content;
+  font-size: 3.5rem;
+}
+
+#experienceBody {
+  border-radius: 10px;
+  margin-top: 10px;
+  color: white;
+  background-color:rgb(35, 141, 167);
+  padding: 10px;
+  border: 2px solid rgba(0, 10, 75, 1);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.italicText {
+  font-style: italic;
+}
+
+.rightAlign {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: 5px;
+}
+
+#expPrev {
+  cursor: pointer;
+  color: lightgray;
+}
+
+#expPrev:hover {
+  color: lightgray;
+}
+
+#expNext {
+  cursor: pointer;
+}
+
+#expNext:hover {
+  color: lightgray;
+}
+
+#expTake {
+  display: none;
+}
+
+#expRes {
+  display: none;
+}
+
+#educationBody {
+  background-color: darkblue;
+  /* width: 60%; */
+}
+
+#form {
+  width: 100%;
+  padding: 20px;
+  background-color: lightblue;
+}
+
+#visNameContainer {
+  margin-bottom: 10px;
+}
+
+#visMailContainer {
+  margin-bottom: 10px;
+}
+
+#visMessageContainer {
+  margin-bottom: 10px;
+}
+
+#submitBtnContainer {
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#submitBtn {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#visName {
+  background-color: rgb(221, 235, 255);
+}
+
+#visMail {
+  background-color: rgb(221, 235, 255);
+}
+
+#visMessage {
+  background-color: rgb(221, 235, 255);
+}
+
+#contactBody {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
+
+#smTitle {
+  color: white;
+  padding-left: 10%;
+  margin-bottom: 25px;
+}
+
+#smBody {
+  color: white;
+  padding-left: 10%;
+}
+
+a { 
+  color: inherit; 
+} 
+
+a:hover {
+  color:rgb(255, 255, 79)
+}
+
+#github {
+  /* color: white; */
+  font-size: large;
+}
+
+/* #socialMediaContainer {
+  background-color: blue;
+} */
+
+.borderRadius {
+  border-radius: 10px;
+}
+
+.rightCol {
+  margin-top: 15%;
+}
+
+.leftContainer {
+  position: absolute;
+  color: white;
+  top: 90%;
+  margin-top: 20px;
+  font-size: 3.4rem;
+  width: fit-content;
+}
+
+.rightContainer {
+  position: absolute;
+  left: 94.5%;
+  color: white;
+  font-size: 3.4rem;
+  width: fit-content;
+}
+
+#leftIcon {
+  color: lightgrey;
+  cursor: pointer;
+}
+
+#rightIcon {
+  cursor: pointer;
+}
+
+#cfdContainer {
+  display: none;
+  transition: 0.4s all;
+}
+
+#doctorContainer {
+  display: none;
+  transition: 0.4s all;
+}
+
+.sourceCodeBtn {
+  /* margin-left: auto;
+  margin-right: auto; */
+  position: relative;
+  left: 56.5%;
+  /* right: 10px; */
+}
+
+.overlay {
+  background-color: black;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* z-index: 1; */
+  display: none;
+}
+
+.projectsModal {
+  position: absolute;
+  top: 10%;
+  width: 80%;
+  left: 10%;
+  z-index: 100;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  /* right: auto; */
+}
+
+.closeBtn{
+  position: absolute;
+  left: 96%;
+  top: 10px;
+  cursor: pointer;
+}
+
+#memoriesModal {
+  display: none;
+  z-index: 100;
+}
+
+#quantumModal {
+  display: none;
+  z-index: 100;
+}
+
+#cfdModal {
+  display: none;
+  z-index: 100;
+}
+
+#doctorModal {
+  display: none;
+  z-index: 100;
+}
+
+#expTitle {
+  background-color: rgb(35, 141, 167);
+}
+
+#memoriesContainer{
+  transition: 0.4s all;
+}
+
+/* #memoriesContainer:hover {
+  transform: scale(1.05);
+} */
+
+/* #cfdContainer:hover {
+  transform: scale(1.05);
+} */
+
+#quantumContainer{
+  transition: 0.4s all;
+}
+
+/* #quantumContainer:hover {
+  transform: scale(1.05);
+}
+
+
+#doctorContainer:hover {
+  transform: scale(1.05);
+} */
+
+#skillsLeft {
+  display: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+#skillsRight {
+  /* display: none; */
+  cursor: pointer;
+  width: fit-content;
+}
+
+#extensivelyUsed{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+#occasionallyUsed{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+#tools{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+#mySkills {
+  display: none;
+}
+

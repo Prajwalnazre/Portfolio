@@ -23,6 +23,10 @@
     integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="../static/css/index.css">
   <script src="../static/js/index.js"></script>
+  <script src="../static/js/skills.js"></script>
+  <script src="../static/js/experience.js"></script>
+  <script src="../static/js/contact.js"></script>
+  <script src="../static/js/projects.js"></script>
 </head>
 
 <body>
@@ -77,29 +81,398 @@
     <div class="bubble"></div>
     <div class="bubble"></div>
     <div class="bubble"></div>
+    <div class="overlay"></div>
     <div class="container">
       <div class="title animate__animated animate__fadeInDown" id="aboutMeContainer">
-        <h1><span class="lightblueText">Hey There</span></h1>
-        <h1>Prajwal here!</h1>
-        <div id="sentence">
-          I am a <span class="lightgreenText">
-            <</span> <span class="yellowText">Front-end Developer</span><span class="lightgreenText"> />
-          </span> <br> <br>
-          I love basically anything about Computers but lately, front-end development has become by
-          my new crush. Looking for great user centric design has become my new hobby.
+        <div id="introContainer">
+          <h1><span class="lightblueText">Hey There</span></h1>
+          <h1>Prajwal here!</h1>
+          <div id="sentence">
+            I am a <span class="lightgreenText">
+              <</span> <span class="yellowText">Front-end Developer
+            </span><span class="lightgreenText"> />
+            </span> <br> <br>
+            Ocassionally, a <span class="lightgreenText">/</span><span class="yellowText">backend_developer</span><span
+              class="lightgreenText">/</span> too. I love basically anything about Computers but lately, front-end
+            development has become by
+            my new crush. Looking for great user centric design has become my new hobby.
+          </div>
+        
+        </div>
+        <!-- <div id="skillsRight">
+          <i id="rightSkillsIcon" class="bi bi-arrow-right-circle-fill"></i>
+        </div> -->
+        <div id="skillsLeft">
+          <i id="leftSkillsIcon" class="bi bi-arrow-left-circle-fill"></i>
+        </div>
+        <div id="mySkills">
+          <h4>Extensively Used</h4>
+          <div id="extensivelyUsed">
+            <img src="../static/images/icons/HTML.png" width="100%">
+            <img src="../static/images/icons/CSS.png" width="100%">
+            <img src="../static/images/icons/Javascript.png" width="100%">
+            <img src="../static/images/icons/jQuery.png" width="100%">
+            <img src="../static/images/icons/Linux.png" width="100%">
+            <img src="../static/images/icons/Python.png" width="100%">
+            <img src="../static/images/icons/Django.png" width="100%">
+            <img src="../static/images/icons/Bootstrap.png" width="100%">
+          </div>
+          <h4>Occasionally Used</h4>
+          <div id="occasionallyUsed">
+            <img src="../static/images/icons/Angular.png" width="100%">
+            <img src="../static/images/icons/React.png" width="100%">
+            <img src="../static/images/icons/ExpressJS.png" width="100%">
+            <img src="../static/images/icons/MongoDB.png" width="100%">
+            <img src="../static/images/icons/NodeJS.png" width="100%">
+            <img src="../static/images/icons/C++.png" width="100%">
+            <img src="../static/images/icons/Java.png" width="100%">
+            <img src="../static/images/icons/PostgreSQL.png" width="100%">
+            <img src="../static/images/icons/Robot Operating System.png" width="100%">
+            <img src="../static/images/icons/tensorflow.png" width="100%">
+          </div>
+          <h4>Tools</h4>
+          <div id="tools">
+            <img src="../static/images/icons/Anaconda.png" width="100%">
+            <img src="../static/images/icons/Git.png" width="100%">
+            <img src="../static/images/icons/Github.png" width="100%">
+            <img src="../static/images/icons/Gitlab.png" width="100%">
+            <img src="../static/images/icons/JIRA.png" width="100%">
+            <img src="../static/images/icons/Jupyter Notebook.png" width="100%">
+            <img src="../static/images/icons/Ngrok.png" width="100%">
+            <img src="../static/images/icons/Postman.png" width="100%">
+            <img src="../static/images/icons/vsCode.png" width="100%">
+            <img src="../static/images/icons/webrtc.png" width="100%">
+          </div>
         </div>
       </div>
-      <div id="projectsContainer" class="animate__animated"> 
-        <h1>Projects</h1>
+      <div id="projectsContainer" class="animate__animated">
+
+        <div class="projectsModal card animate__animated" id="memoriesModal">
+          <div class="card-header text-center">
+            <h4>Memories</h4> <i class="bi bi-x-square-fill closeBtn"></i>
+          </div>
+          <div class="card-body">
+            <p>
+              Objective: To learn and implement a MERN stack application
+            </p>
+            <p>
+              Approach: MERN stands for MongoDB, Express, React and Node. This stack is one of most highly
+              scalable stack. By learning and implementing a social media app with CRUD operations, I would be able to learn the development
+              of a full stack application. Youtube tutorial on the same helped me in getting the application
+              from scratch till deployment. Seperate projects for both the client and server were made.
+              The client side uses react, axios, moment, redux, and material while the backend side
+              implements mongoose, and express.
+            </p>
+            <p>
+              Takeaways: Hands on experience on React, Redux and Mongoose was very crucial. On the client side
+              I was able to grasp some of the core
+              concepts in React including props, components, jsx syntax, API calls, states etc.
+              On the server side, I was able to grasp the creation of APIs and keeping the data 
+              and secret key safe using dotenv.
+            </p>
+            <p>
+              Results: The backend application was deployed on heroku while the frontend was deployed on
+              netlify. The user shall be able to post an image with heading, hastags and description
+              using the form provided. The user shall also be able to view, update or delete the posts.
+            </p>
+          </div>
+        </div>
+
+        <div class="projectsModal card animate__animated" id="quantumModal">
+          <div class="card-header text-center">
+            <h4>ML on Quantum Simulators</h4> <i class="bi bi-x-square-fill closeBtn"></i>
+          </div>
+          <div class="card-body">
+            <p>
+              Objective: The main goal of this project was to simulate machine learning on a quantum environment and
+              explore
+              the booming field of Quantum Computers
+            </p>
+            <p>
+              Approach: This was a research based project on Quantum Computers and it’s simulators under ’Dr. Satyadhyan
+              Chickerur’, a renowned professor at School of Computer Science and Engineering, KLE Tech. Through this
+              project,
+              I had an opportunity to learn the basics of quantum computers and its working. The different properties of
+              the
+              quantum particles such as quantum entanglement, superpositions were studied as a part of pre-requisites
+              for the
+              research. Through the course of project, we were able to gather continuous insights and implement them.
+            </p>
+            <p>
+              Takeaways: I was able to explore a relatively fresh and booming technology of Quantum Computers with
+              concepts
+              like Quantum Entaglement, Superposition, Quantum Logic gates, Quantum Circuits. Machine Learning
+              frameworks like TFQ (Tensorflow Quantum), and cirq, seaborn, keras etc along with some key ML concepts
+              like
+              CNN.
+            </p>
+            <p>
+              Result: I was able to complete the project by successfully implementing Machine Learning for binary
+              classification
+              of the images. I was able to implement CNN on a quantum simulated circuit. For comparison purpose, a
+              traditional ML was implemented. The quantum version bore an accuracy of 69 percent initially which was
+              later
+              raised to 73 percent after some tweaks. All the project files including report is uploaded on github.
+            </p>
+          </div>
+        </div>
+
+        <div class="projectsModal card animate__animated" id="cfdModal">
+          <div class="card-header text-center">
+            <h4>CFD</h4> <i class="bi bi-x-square-fill closeBtn"></i>
+          </div>
+          <div class="card-body">
+            <p>
+              Objective: To implement Computational Fluid Dynamics simulation using High Performance Computers on a 2D
+              silhouette image.
+            </p>
+            <p>
+              Approach: This project was done as a 5 member team including myself. We as a team first happened to do
+              our literature survey on the basics of Computational Fluid Dynamics. This subject is the study of fluid
+              particles
+              movements. Before we could program something, it was crucial for us to know the fluid particle behaviours
+              with
+              required equations. We happened to use a framework by name ’mechsys’ to help simulate fluid particles with
+              the
+              attributes that can be tweaked as desired (ex- viscocity, fluid molecule weight etc). This was later fed
+              with a series
+              of 9 equations known as ’Navier-Stokes’ equation.
+            </p>
+            <p>
+              Takeaways: A good knowledge on the fluid flow behaviour on a steady state solid, lattice boltzmann method,
+              navier-stokes equations, Tensorflow, opencv and mechsys.
+            </p>
+            <p>
+              Result: We were able to generate the output image with the fluid flow simulation along with the pressure
+              on the
+              particles being indicated with color coding on the particle themselves.
+            </p>
+          </div>
+        </div>
+
+        <div class="projectsModal card animate__animated" id="doctorModal">
+          <div class="card-header text-center">
+            <h4>Doctor Dashboard</h4> <i class="bi bi-x-square-fill closeBtn"></i>
+          </div>
+          <div class="card-body">
+            <p>
+              Objective: To implement a doctor's dashboard using Angular 11.
+            </p>
+            <p>
+              Approach: This project was done as a part of training for web development at Invento Robotics.
+              I was given a set of data which was directly linked with the robot where the dashboard
+              must be a portal for getting the patient's data from the robot. The backend for this was
+              a ready implemented using django. I was able to use Material UI and bootstrap to build a 
+              dashbaord for the doctors. 
+            </p>
+            <p>
+              Takeaways: A good knowledge on working of Angular along with some core concepts like components
+              data binding, encapsultation, typescript functions etc.
+            </p>
+            <p>
+              Result: A dahsboard for the doctor to schedule appointments, check patients data, other 
+              analytics and set 
+              online status as desired.
+            </p>
+          </div>
+        </div>
+
+        <div id="projectTitle">
+          <p>Projects</p>
+        </div>
+        <div id="projectBody">
+          <div class="row">
+            <div class="col-xl-6 col-sm-12">
+              <!-- Left Post 1 -->
+              <div id="memoriesContainer" class="card borderRadius animate__animated card-shadow">
+                <div class="card-header text-center">
+                  <h4>Memories</h4>
+                </div>
+                <div class="card-body">
+                  <img src="../static/images/memories_cropped.png" width="100%" alt="Memories">
+                </div>
+                <div class="card-footer">
+                  <button id="memoriesMoreBtn" class="btn btn-primary">More</button>
+                  <a href="https://github.com/Prajwalnazre/Memories"><button class="btn btn-dark sourceCodeBtn">Source Code <i class="bi bi-github"></i></button></a> 
+                </div>
+              </div>
+              <!-- Left Post 2 -->
+              <div id="cfdContainer" class="card borderRadius animate__animated">
+                <div class="card-header text-center">
+                  <h4>CFD</h4>
+                </div>
+                <div class="card-body">
+                  <img src="../static/images/car_flow_2.png" width="100%" alt="Memories">
+                </div>
+                <div class="card-footer">
+                  <button id="cfdMoreBtn" class="btn btn-primary">More</button>
+                  <a href="https://github.com/Prajwalnazre/CFD"><button class="btn btn-dark sourceCodeBtn">Source Code <i class="bi bi-github"></i></button></a> 
+                </div>
+              </div>
+
+              <!-- Left Arrow -->
+              <div class="leftContainer">
+                <i id="leftIcon" class="bi bi-arrow-left-circle-fill"></i>
+              </div>
+            </div>
+            <div class="col-xl-6 col-sm-12">
+              <!-- Right Arrow -->
+              <div class="rightContainer">
+                <i id="rightIcon" class="bi bi-arrow-right-circle-fill"></i>
+              </div>
+              <!-- Right post 1 -->
+              <div id="quantumContainer" class="card borderRadius rightCol animate__animated">
+                <div class="card-header text-center">
+                  <h4>ML on Quantum Simulators</h4>
+                </div>
+                <div class="card-body">
+                  <img src="../static/images/quantumComputers.jpeg" width="100%" alt="Quantum Computers">
+                </div>
+                <div class="card-footer">
+                  <button id="quantumMoreBtn" class="btn btn-primary">More</button>
+                  <a href="https://github.com/Prajwalnazre/Quantum-Computers"><button class="btn btn-dark sourceCodeBtn">Source Code <i class="bi bi-github"></i></button></a> 
+                </div>
+              </div>
+              <!-- Right post 2 -->
+              <div id="doctorContainer" class="card borderRadius rightCol animate__animated">
+                <div class="card-header text-center">
+                  <h4>Doctor Dashboard</h4>
+                </div>
+                <div class="card-body">
+                  <img src="../static/images/doctorUI.png" width="100%" alt="Doctor UI">
+                </div>
+                <div class="card-footer">
+                  <button id="doctorMoreBtn" class="btn btn-primary">More</button>
+                  <a href="https://github.com/Prajwalnazre/DocHere"><button class="btn btn-dark sourceCodeBtn">Source Code <i class="bi bi-github"></i></button></a> 
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- <div class="row">
+            <div class="col-xl-6 col-sm-12">
+              <div class="card">
+
+              </div>
+            </div>
+            <div class="col-xl-6 col-sm-12">
+              <div class="card">
+
+              </div>
+            </div>
+          </div> -->
+        </div>
       </div>
       <div id="experienceContainer" class="animate__animated">
-        <h1>Experience</h1>
+        <div id="experienceTitle">
+          <p>Experience</p>
+        </div>
+        <img src="/static/images/invento.png" alt="Invento Logo" width="30%"> <br> <br>
+        <div id="experienceBody" class="card">
+          <div class="card-header" id="expTitle">
+            <h4 class="yellowText">Software Development Intern at INVENTO ROBOTICS <span class="italicText">(Mar' 2021 -
+              Jul' 2021)</span></h4> 
+          </div>
+          <div class="card-body">
+            <p id="expObj"><span class="lightgreenText">Objective</span>: To develop a fleet management Dashboard for
+              connecting with the robots</p>
+            <p id="expApp"><span class="lightgreenText">Approach</span>: The robots are filled with a lot of features as
+              desired by the clients. It became difficult for them to keep
+              track of everything the robot does. So, we had to build a solution where the robot is tracked and
+              maintained. A
+              web portal was a very fine choice to do so as it has the potential to be highly scalable. Earlier, a lot all
+              our users
+              found it difficult to get familiar with all the softwares, hardwares, operating operations, and manuals. Now
+              we are
+              building our own custom User Dashboard for all these operations. The main stack used was django and ROS. The
+              communication between the server and ROS master is facilitated by ROS bridge which mimics all the topics and
+              nodes from ROS to main server. The werbrtc channel uses ngrok tunneling for the camera feed and the sensors
+              uses the socket communication.
+            </p>
+            <p id="expTake"><span class="lightgreenText">Takeaways</span> : Through this project, I was able to get
+              experience in a lot of the front-end technologies and frameworks
+              like bootstrap, momentjs, easypiejs, createjs, jQuery etc, backend frameworks includes django to build
+              some of the required APIs. Other technolgies and concepts learnt are ROSLIB, ROS2D, rosbridge, webrtc,
+              socket
+              connections, APIs etc. Along with technologies, I was also provided with an opportunity to do the technical
+              documentation
+              of the front-end stack using Latex.
+            </p>
+            <p id="expRes">
+              <span class="lightgreenText">Result</span> : All ROS related heavy softwares like gazebo and rviz are
+              replaced with our own Dashboard. We are
+              getting all the features like the robot map, sensor data and camera feed live on the dashboard which is now
+              being
+              used by the clients.
+            </p>
+          </div>
+          
+          <div class="rightAlign">
+            <i class="bi bi-arrow-left-square-fill" id="expPrev"></i> &nbsp;
+            <i class="bi bi-arrow-right-square-fill" id="expNext"></i>
+          </div>
+        </div>
       </div>
       <div id="educationContainer" class="animate__animated">
-        <h1>Education</h1>
+        <div id="educationTitle">
+          <p>Education</p>
+        </div>
+        <div id="educationBody" class="card">
+          <img src="../static/images/timeline2.png" alt="education" width="100%">
+        </div>
       </div>
-      <div id="contactContainer" class="animate__animated"> 
-        <h1>Contact</h1>
+      <div id="contactContainer" class="animate__animated">
+        <div id="contactTitle">
+          <p>Contact Me</p>
+        </div>
+        <div id="contactBody">
+          <div id="form" class="card">
+            <form>
+              <div class="form-row">
+                <div id="visNameContainer" class="form-group col-xl-12 col-md-12 col-sm-12">
+                  <label for="visName">Name</label>
+                  <input type="text" class="form-control" id="visName" placeholder="Name">
+                </div>
+                <div id="visMailContainer" class="form-group col-xl-12 col-md-12 col-sm-12">
+                  <label for="visMail">Email</label>
+                  <input type="email" class="form-control" id="visMail" placeholder="Email">
+                </div>
+              </div>
+              <!-- <div class="form-row">
+                
+              </div> -->
+              <div id="visMessageContainer" class="form-group col-xl-12 col-md-12 col-sm-12">
+                <label for="visMessage">Message</label>
+                <textarea rows="4" type="text" class="form-control" id="visMessage" placeholder="Message"></textarea>
+              </div>
+            </form>
+
+            <div id="submitBtnContainer">
+              <button id="submitBtn" class="btn btn-primary">Submit</button>
+            </div>
+          </div>
+          <div id="socialMediaContainer">
+            <div id="smTitle">
+              <h2>Social Media Links</h2>
+            </div>
+            <div id="smBody">
+              <div id="github">
+                <h3>Github <a href="https://github.com/Prajwalnazre"><i class="bi bi-github"></i></a></h3>
+              </div>
+              <div id="linkedin">
+                <h3>LinkedIn <a href="https://www.linkedin.com/in/prajwal-nazre-b12450191/"><i
+                      class="bi bi-linkedin"></i></a></h3>
+              </div>
+              <div id="instagram">
+                <h3>Instagram <a href="https://www.instagram.com/prajwalnazre/"><i class="bi bi-instagram"></i></a></h3>
+              </div>
+              <div id="email">
+                <h3>E-Mail <a href="mailto:prajwal.nazre777@gmail.com"><i class="bi bi-envelope-fill"></i></a></h3>
+              </div>
+
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="navigationSection">
@@ -112,7 +485,7 @@
         </ul>
       </div>
     </div>
-    <p id="scrollMessage" class="orangeText" >Warning: Chaos is bad. Scroll and navigate slowly to avoid chaos. <br>
+    <p id="scrollMessage" class="orangeText">Warning: Chaos is bad. Scroll and navigate slowly to avoid chaos. <br>
       <!-- <span class="yellowText">Note: You can use arrow keys for navigating too</span>  -->
     </p>
   </div>
