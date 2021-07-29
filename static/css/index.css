@@ -1020,3 +1020,6 @@ a:hover {
   display: none;
 }
 
+#expCardBody {
+  font-size: 15px;
+}
