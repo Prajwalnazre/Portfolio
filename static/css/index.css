@@ -887,11 +887,24 @@ a:hover {
 }
 
 .sourceCodeBtn {
-  /* margin-left: auto;
-  margin-right: auto; */
-  position: relative;
-  left: 56.5%;
+  margin-left: auto;
+  margin-right: 0px;
+  /* position: relative;
+  left: 56.5%; */
   /* right: 10px; */
+}
+
+.projectFoot{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  align-items: center;
+}
+ 
+.moreBtn {
+  width: fit-content;
+  /* margin-right: auto;
+  margin-left: auto; */
 }
 
 .overlay {

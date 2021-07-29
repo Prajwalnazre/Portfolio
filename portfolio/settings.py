@@ -26,9 +26,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'z1a$n#8#5v%nq0x8z=!c4kfn%+re&=(znt!x70w##7&6yc1s&7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['prajj.herokuapp.com']
+ALLOWED_HOSTS = []
 
 STATIC_URL = '/static/'
 
